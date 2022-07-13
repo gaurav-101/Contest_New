@@ -51,3 +51,60 @@ int main() {
   return 0;
 }
 //similar height}
+
+
+
+// // MY WAY (ONE CASE INCORRECT)
+// #include <iostream>
+// #include<map>
+// using namespace std;
+
+// void solve(){
+//     int a;
+//     cin>>a;
+//     int arr[a];
+//     for(int i=0;i<a;i++){
+//         cin>> arr[i];
+//     }
+//     map<int, int> M;
+//     for (int i = 0; i<a; i++) {
+ 
+//         if (M.find(arr[i]) == M.end()) {
+//             M[arr[i]] = 1;
+//         }
+ 
+//         // Else update the frequency
+//         else {
+//             M[arr[i]]++;
+//         }
+//     }
+//     map<int, int>::iterator itr;
+//     int count=0;
+//     for (itr = M.begin(); itr != M.end(); ++itr) {
+//         if(itr->second==1){
+//             count++;
+//         }
+//     }
+//     int ans;
+//     if(count>0){
+//         if(count%2==0){
+//             ans=count/2;
+//         }
+//         else{
+//             ans=(count/2)+1;
+//         }
+//     }
+//     else{
+//         ans=0;
+//     }
+//     cout<<ans;
+// }
+// int main() {
+// 	int n;
+// 	cin>>n;
+// 	while(n--){
+// 	    solve();
+// 	    cout<<endl;
+// 	}
+// 	return 0;
+// }
